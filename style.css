@@ -1,0 +1,47 @@
+body {
+    background-color: #0D0D0D;
+    
+    
+}
+
+nav {
+   height: 80px; 
+   font-size: 20px;
+   background-color: #000; 
+}
+
+
+
+table {
+   background-color: #fff;
+   border-radius: 10px;
+}
+
+.sala {
+    color: #BF1304;
+    font-weight: bold;
+}
+
+.lng {
+        color: orange;
+        font-weight: bold;
+    
+}
+
+.logo {
+    filter: invert(99%) sepia(2%) saturate(576%) hue-rotate(220deg) brightness(121%) contrast(100%);
+}
+
+h3 {
+    text-align: center;
+    color: #fff;
+}
+
+footer {
+    height: 100px;
+    background-color: #0D0D0D;
+}
+
+.redes {
+    margin-left: 35%;
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>GK CINEMAS</title>
+
+    <link href="style.css" rel="stylesheet">
+</head>
+<body style="background-image: url(./img/cinema.jpg);">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" onclick="alert('Botão não implementado. Estamos trabalhando nisso😀')">
+                <img src="./img/logo.png" alt="logo-cinema" width="42" class="logo">
+                <span style="color: #fff; font-size: 20px; background-color: #730202; border-radius: 5px; width: 50px;">GK CINEMAS</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mx-4">
+                    <a class="nav-link active" style="color: #fff;" aria-current="page" href="#" onclick="alert('Botão não implementado. Estamos trabalhando nisso😀')">Home</a>
+                    <a class="nav-link" style="color: #fff;" href="#" onclick="alert('Botão não implementado. Estamos trabalhando nisso😀')">Ingressos</a>
+                    <a class="nav-link" style="color: #fff;" href="#" onclick="alert('Botão não implementado. Estamos trabalhando nisso😀')">Promoções</a>
+                    <a class="nav-link" style="color: #fff;" href="#" onclick="alert('Botão não implementado. Estamos trabalhando nisso😀')">Em Breve</a>
+                    <a class="nav-link" style="color: #fff;" href="#" onclick="alert('Botão não implementado. Estamos trabalhando nisso😀')">Contatos</a>
+                </div>
+            </div>
+        </div>
+    </nav>      
+    <div id="carouselExampleInterval" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="./img/homem-aranha.png" class="d-block w-100" alt="cartaz-homem-aranha" height="780">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="./img/top-gun.jpg" class="d-block w-100" alt="cartaz-top-gun" height="780">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/minions2.jpg" class="d-block w-100" alt="cartaz-minions" height="780">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <h3>Filmes em Cartaz</h3>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <table class="table table-sm mb-4">
+                <thead>
+                <tr>
+                    <th scope="col" colspan="6">GK Jardim Shopping</th>
+                </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                <tr>
+                    <td class="sala">Sala 1</td>
+                    <td>Ingresso Para o Paraíso</td>
+                    <td>16:45 | 21:30</td>
+                    <td class="lng">DUB</td>
+                    <td><img src="./img/12.png" alt="idade censura" width="20"></td>
+                    <td>Comédia Romântica</td>
+                </tr>
+                <tr>
+                    <td class="sala">Sala 2</td>
+                    <td>Não! Não Olhe!</td>
+                    <td>18:40</td>
+                    <td class="lng">LEG</td>
+                    <td><img src="./img/14.png" alt="idade censura" width="20"></td>
+                    <td>Suspense</td>
+                </tr>
+                <tr>
+                    <td class="sala">Sala 2</td>
+                    <td>Um Lugar Bem Longe Daqui</td>
+                    <td>13:40</td>
+                    <td class="lng">DUB</td>
+                    <td><img src="./img/14.png" alt="idade censura" width="20"></td>
+                    <td>Drama</td>
+                </tr>
+                <tr>
+                    <td class="sala">Sala 3</td>
+                    <td>Homem - Aranha: Sem Volta Para Casa - Versão Estendida</td>
+                    <td>21:10</td>
+                    <td class="lng">LEG</td>
+                    <td><img src="./img/12.png" alt="idade censura" width="20"></td>
+                    <td>Ação</td>
+                </tr>
+                <tr>
+                    <td class="sala">Sala 3</td>
+                    <td>Minions 2 - a Origem de Gru</td>
+                    <td>15:50 | 18:05</td>
+                    <td class="lng">DUB</td>
+                    <td><img src="./img/livre.png" alt="idade censura" width="20"></td>
+                    <td>Animação</td>
+                </tr>
+                <tr>
+                    <td class="sala">Sala 4</td>
+                    <td>Pinocchio - o Menino de Madeira</td>
+                    <td>14:10</td>
+                    <td class="lng">DUB</td>
+                    <td><img src="./img/livre.png" alt="idade censura" width="20"></td>
+                    <td>Animação</td>
+                </tr>
+                <tr>
+                    <td class="sala">Sala 6</td>
+                    <td>O Lendário Cão Guerreiro</td>
+                    <td>15:00</td>
+                    <td class="lng">DUB</td>
+                    <td><img src="./img/livre.png" alt="idade censura" width="20"></td>
+                    <td>Animação</td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm mb-4">
+                <thead>
+                <tr>
+                    <th scope="col" colspan="6">GK Shopping Miller</th>
+                </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                <tr>
+                    <td class="sala">Sala 1</td>
+                    <td>Ingresso Para o Paraíso</td>
+                    <td>15:45 | 21:10</td>
+                    <td class="lng">DUB</td>
+                    <td><img src="./img/12.png" alt="idade censura" width="20"></td>
+                    <td>Comédia Romântica</td>
+                </tr>
+                <tr>
+                    <td class="sala">Sala 2</td>
+                    <td>Um Lugar Bem Longe Daqui</td>
+                    <td>13:40 | 20:45</td>
+                    <td class="lng">DUB</td>
+                    <td><img src="./img/14.png" alt="idade censura" width="20"></td>
+                    <td>Drama</td>
+                </tr>
+                <tr>
+                    <td class="sala">Sala 3</td>
+                    <td>Homem - Aranha: Sem Volta Para Casa - Versão Estendida</td>
+                    <td>14:30 | 18:10</td>
+                    <td class="lng">LEG</td>
+                    <td><img src="./img/12.png" alt="idade censura" width="20"></td>
+                    <td>Ação</td>
+                </tr>
+                <tr>
+                    <td class="sala">Sala 4</td>
+                    <td>Minions 2 - a Origem de Gru</td>
+                    <td>13:50 | 19:05</td>
+                    <td class="lng">DUB</td>
+                    <td><img src="./img/livre.png" alt="idade censura" width="20"></td>
+                    <td>Animação</td>
+                </tr>
+                <tr>
+                    <td class="sala">Sala 4</td>
+                    <td>Pinocchio - o Menino de Madeira</td>
+                    <td>16:20</td>
+                    <td class="lng">DUB</td>
+                    <td><img src="./img/livre.png" alt="idade censura" width="20"></td>
+                    <td>Animação</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    <h3>Filmes em Breve</h3>
+    <div class="row mb-4">
+        <div class="col-2"></div>
+        <div class="col-2">
+            <div class="card text-bg-dark">
+                <img src="./img/adamnegro.jpg" class="card-img" alt="cartaz-adao">
+                <div class="card-img-overlay">
+                <h5 class="card-title">Adão Negro</h5>
+                <p class="card-text">20/10/22</p>
+                <p class="card-text"><small>Ação / Fantasia</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="card text-bg-dark">
+                <img src="./img/lilo.jpg" class="card-img" alt="cartaz-lilo">
+                <div class="card-img-overlay">
+                <h5 class="card-title">Lilo, Lilo, Crocodilo</h5>
+                <p class="card-text">03/11/22</p>
+                <p class="card-text"><small>Animação</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="card text-bg-dark">
+                <img src="./img/devotion.jpg" class="card-img" alt="cartaz-devotion">
+                <div class="card-img-overlay">
+                <h5 class="card-title">Devotion</h5>
+                <p class="card-text">23/11/22</p>
+                <p class="card-text"><small>Guerra / Drama</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="card text-bg-dark">
+                <img src="./img/avatar.jpg" class="card-img" alt="cartaz-avatar">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Avatar</h5>
+                  <p class="card-text">15/12/22</p>
+                  <p class="card-text"><small>Ação / Fantasia / Ficção científica</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    <footer>
+        <div class="redes">
+            <img src="./img/facebook.png" alt="facebook" width="20">
+            <img src="./img/instagram.png" alt="instagram" width="20" >
+            <img src="./img/youtube.png" alt="youtube" width="20" >
+            <p>© Copyright 2022 GK Cinemas – desenvolvido por Guilherme Koerber</p>
+        </div>
+        
+       
+    </footer>
+</body>
+</html>
