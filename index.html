@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planejamento de Festa Caipira</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Planejamento de Festa Caipira</h1>
+        <form id="partyForm">
+            <fieldset>
+                <legend>Informações Gerais</legend>
+                <label for="date">Data da Festa:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="time">Horário:</label>
+                <input type="time" id="time" name="time" required>
+                
+                <label for="location">Local:</label>
+                <input type="text" id="location" name="location" required>
+                
+                <label for="guestCount">Número de Convidados:</label>
+                <input type="number" id="guestCount" name="guestCount" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Convites</legend>
+                <label for="inviteMethod">Método de Envio:</label>
+                <select id="inviteMethod" name="inviteMethod" required>
+                    <option value="email">E-mail</option>
+                    <option value="whatsapp">WhatsApp</option>
+                    <option value="physical">Convites Físicos</option>
+                </select>
+                
+                <label for="rsvpDate">Data de Confirmação:</label>
+                <input type="date" id="rsvpDate" name="rsvpDate" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Decoração</legend>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Quantidade</th>
+                            <th>Valor Unitário (R$)</th>
+                            <th>Valor Total (R$)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="decorationTable">
+                        <tr>
+                            <td><input type="text" name="decorationItem[]" required></td>
+                            <td><input type="number" name="decorationQuantity[]" min="0" step="1" required></td>
+                            <td><input type="number" name="decorationUnitPrice[]" min="0" step="0.01" required></td>
+                            <td><input type="number" name="decorationTotalPrice[]" readonly></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="button" onclick="addRow('decorationTable')">Adicionar Item</button>
+            </fieldset>
+
+            <fieldset>
+                <legend>Comidas e Bebidas</legend>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Quantidade</th>
+                            <th>Valor Unitário (R$)</th>
+                            <th>Valor Total (R$)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="foodDrinkTable">
+                        <tr>
+                            <td><input type="text" name="foodDrinkItem[]" required></td>
+                            <td><input type="number" name="foodDrinkQuantity[]" min="0" step="1" required></td>
+                            <td><input type="number" name="foodDrinkUnitPrice[]" min="0" step="0.01" required></td>
+                            <td><input type="number" name="foodDrinkTotalPrice[]" readonly></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="button" onclick="addRow('foodDrinkTable')">Adicionar Item</button>
+            </fieldset>
+
+            <fieldset>
+                <legend>Atividades</legend>
+                <label for="activityList">Lista de Atividades:</label>
+                <textarea id="activityList" name="activityList" rows="4" placeholder="Pescaria, dança da quadrilha, correio elegante, etc."></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Orçamento</legend>
+                <label for="budget">Orçamento Total (R$):</label>
+                <input type="number" id="budget" name="budget" readonly>
+                
+                <label for="additionalNotes">Notas Adicionais:</label>
+                <textarea id="additionalNotes" name="additionalNotes" rows="4" placeholder="Qualquer outra informação relevante."></textarea>
+            </fieldset>
+
+            <button type="submit">Salvar Planejamento</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+  
